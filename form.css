@@ -1,19 +1,44 @@
-.parent {
-    position: relative;
-    top: 0;
-    left: 0;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-.image1 {
+.content {
+    width: 100vw;
+    height: 100vh;
+}
+
+.picture{
+    background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 40vw;
+}
+
+.odin-logo {
     position: relative;
-    top: 0;
-    left: 0;
-    border: 1px red solid;
+    background-color: black;
+    opacity: 50%;
+    width: auto;
+
 }
 
 .image2 {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    border: 1px green solid;
+    position: relative;
+    width: 5em;
+}
+
+@font-face {
+    src:url(font/Norse-Bold.otf);
+    font-family: norsebold;
+}
+
+
+.odin {
+    font-family: norsebold, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    color: white;
 }
