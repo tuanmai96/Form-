@@ -4,9 +4,21 @@
     box-sizing: border-box;
 }
 
+:root{
+    --color: #e6007e;
+    --txt: rgb(185, 185, 185)
+}
+
+
 .content {
     width: 100vw;
     height: 100vh;
+}
+
+.content,
+.logo{
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .picture{
@@ -17,18 +29,105 @@
     width: 40vw;
 }
 
-.odin-logo {
+.logo{
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
     position: relative;
-    background-color: black;
+    top: 20vh;
+    gap: 1vw;
+    padding: 15px 0;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.whale {
+    height: 10vh;
+}
+
+.right{
+    width: 60vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    
+}
+
+.left{
+    padding-left: 3vw;
+}
+
+.dummy-text{
+    font-weight: 500;
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+.remote-text{
+    margin: 40px 0 80px;
+}
+
+.form{
+
+    box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.form-title{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.input{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 0.7rem;
+    text-transform: uppercase;
     opacity: 50%;
-    width: auto;
-
 }
 
-.image2 {
-    position: relative;
-    width: 5em;
+input:focus{
+    outline: none;
+    border: 2px solid var(--color);
 }
+
+button{
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin: 40px 0;
+}
+
+button:hover{
+    background-color: var(--color);
+    color: black;
+    
+}
+
+.log-in{
+    display: flex;
+    gap: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color);
+    font-weight: 700;
+}
+
+a:hover{
+    color: black;
+}
+
 
 @font-face {
     src:url(font/Norse-Bold.otf);
